@@ -17,5 +17,5 @@ Nathan Larson has led static analysis teams at two major financial institutions,
 * Make your appsec recommendations worth the effort.
 * Add the value of direct experience to your recommendations.
 
-[Next slide](00_start_here.md)
+[Next slide](start_here.md)
 
