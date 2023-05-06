@@ -16,4 +16,6 @@ I made some choices for working on this demo:
 * Open-source software -- to show what's possible at zero cost and maximum transparency
 * Use the latest LTS version of software to get out of frequent feature update headaches
 
+**But we should never be too tied to our tools of choice.**
+
 [Next slide](jenkins.md)
