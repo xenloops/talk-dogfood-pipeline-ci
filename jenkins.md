@@ -1,7 +1,7 @@
 # Installing Jenkins
-Default Jenkins URL: http://localhost:8080
-Default Jenkins root dir: /var/lib/jenkins/
-Default Jenkins working dir: /var/lib/jenkins/workspace/ (bookmark this in file manager)
+* Default Jenkins URL: http://localhost:8080
+* Default Jenkins root dir: ```/var/lib/jenkins/```
+* Default Jenkins working dir: ```/var/lib/jenkins/workspace/``` (bookmark this in file manager)
 
 
 1. Download and import the Jenkins repository GPG keys (also see [this page](https://www.jenkins.io/blog/2023/03/27/repository-signing-keys-changing)):
