@@ -7,6 +7,7 @@ A common refrain in the application security profession these days is to meet de
 <details>
   <summary> Bio </summary>
 
+  
 Nathan Larson has led static analysis teams at two major financial institutions, pen-tested internet-connected industrial devices, performed code review in aerospace, and taught security and programming at the university and grad school levels. He has an MS in software engineering, a BS in computer science, and has held a few security certifications -- all of which show a proficiency in reading textbooks and passing exams. He wrote insecure code in several industries for two decades before catching the AppSec bug, from which he hasn't recovered in 12 years. He enjoys astronomy, cribbage, and finding silly mistakes in production code.
 </details>
 
@@ -16,14 +17,5 @@ Nathan Larson has led static analysis teams at two major financial institutions,
 * Make your appsec recommendations worth the effort.
 * Add the value of direct experience to your recommendations.
 
-
-# Preliminaries
-* VirtualBox
-* A virtual machine running Linux (I'm using Lubuntu, but any flavor should work), with minimum requirements:
-  * 4GB RAM
-  * 1 CPU
-  * 64 MB video RAM
-  * 40 GB virtual storage
-
-
+[Next slide](00_start_here.md)
 
