@@ -4,7 +4,7 @@ To test it out, make your own HelloWorld project (though this will take extra wo
 * https://github.com/OwlCarousel2/OwlCarousel2
 * https://github.com/williamfiset/DEPRECATED-data-structures
 
-Be sure to fork someone else's repo if you need to add to it.
+Be sure to fork someone else's repo if you need to add to it rather than mucking up their work.
 
 1. (Do basic Jenkins job setup)
 2. Build Steps: add Invoke Dependency-Check
