@@ -1,8 +1,8 @@
 # Dependency-Check demo
 
 To test it out, make your own HelloWorld project (though this will take extra work to find and include vulnerable libraries), or use a project that gives results without trying too hard, e.g.:
-https://github.com/OwlCarousel2/OwlCarousel2
-https://github.com/williamfiset/DEPRECATED-data-structures
+* https://github.com/OwlCarousel2/OwlCarousel2
+* https://github.com/williamfiset/DEPRECATED-data-structures
 
 Be sure to fork someone else's repo if you need to add to it.
 
