@@ -29,8 +29,7 @@ Jenkins integration: https://plugins.jenkins.io/dependency-check-jenkins-plugin
 
 1. In Jenkins: Manage Jenkins > Plugins > Available Plugins
 2. Search for “OWASP Dependency-Check” 
-3. Check
-4. Install without Restart.
+3. Check Install without Restart.
 5. Manage Jenkins > Tools
 6. Scroll down to Dependency-Check section
 7. Click Add Dependency-Check button
