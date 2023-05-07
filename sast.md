@@ -41,7 +41,7 @@ Instructions: https://docs.sonarqube.org/latest/setup/install-server
 9. Exit Postgres command prompt:
     ```quit```
 
-### Deployment
+#### SonarQube
 
 1. Download SonarQube Community Edition (I opted for the LTS version).
 2. Create a new user and group:
@@ -57,61 +57,59 @@ Instructions: https://docs.sonarqube.org/latest/setup/install-server
     ```
 4. Sonar makes some assumptions of people using the Community Edition. Like that you want to muck about in config files and change your user’s settings. (Well, it is free.) Change the following settings (per https://docs.sonarqube.org/latest/requirements/requirements -- make sure you’re looking at the appropriate version!)
     Add to /etc/sysctl.conf:
-    ```
-    vm.max_map_count=524288
-    fs.file-max=131072
-    ulimit -n 131072
-    ulimit -u 8192
-    ```
+    
+        vm.max_map_count=524288
+        fs.file-max=131072
+        ulimit -n 131072
+        ulimit -u 8192
+
     Add to /etc/security/limits.conf:
-    ```
-    sonarqube   -   nofile   131072
-    sonarqube   -   nproc    8192
-    ```
+
+        sonarqube   -   nofile   131072
+        sonarqube   -   nproc    8192
+
     Edit $SONARQUBE-HOME/conf/sonar.properties:
-    ```
-    sonar.jdbc.username=sonarqube
-    sonar.jdbc.password=[password]
-    sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube
-    sonar.web.host=127.0.0.1
-    #sonar.web.context=/sonarqube
-    sonar.web.port=9000
-    ```
-Set up the Sonarqube system service as in https://docs.sonarqube.org/latest/setup/operate-server/: 
-Create a file 
-/etc/systemd/system/sonarqube.service:
-[Unit]
-Description=SonarQube service
-After=syslog.target network.target
 
-[Service]
-Type=simple
-User=sonarqube
-Group=sonarqube
-PermissionsStartOnly=true
-ExecStart=/bin/nohup [path]/java/bin/java -Xms32m -Xmx32m 
-  -Djava.net.preferIPv4Stack=true -jar [path]/sonarqube/lib/sonar-application-[ver].jar
-StandardOutput=syslog
-LimitNOFILE=131072
-LimitNPROC=8192
-TimeoutStartSec=5
-Restart=always
-SuccessExitStatus=143
+        sonar.jdbc.username=sonarqube
+        sonar.jdbc.password=[password]
+        sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube
+        sonar.web.host=127.0.0.1
+        #sonar.web.context=/sonarqube
+        sonar.web.port=9000
 
-[Install]
-WantedBy=multi-user.target
+5. Set up the Sonarqube system service as shown in https://docs.sonarqube.org/latest/setup/operate-server/: 
 
-Only problem is that the version number needs updating whenever jar file version changes. 
+    Create a file ```/etc/systemd/system/sonarqube.service``` and populate with:
 
-Enable, then start the new service:
-sudo systemctl enable sonarqube.service
-sudo systemctl start sonarqube.service
+        [Unit]
+        Description=SonarQube service
+        After=syslog.target network.target
 
-Browse to the URL set in sonar.properties.
-If using Firefox: 
-type about:config in URL
-Search for browser.urlbar.autoFill
-Set it to false.
+        [Service]
+        Type=simple
+        User=sonarqube
+        Group=sonarqube
+        PermissionsStartOnly=true
+        ExecStart=/bin/nohup [path]/java/bin/java -Xms32m -Xmx32m 
+          -Djava.net.preferIPv4Stack=true -jar [path]/sonarqube/lib/sonar-application-[ver].jar
+        StandardOutput=syslog
+        LimitNOFILE=131072
+        LimitNPROC=8192
+        TimeoutStartSec=5
+        Restart=always
+        SuccessExitStatus=143
 
-Check the files in /opt/sonarqube/logs if any troubles.
+        [Install]
+        WantedBy=multi-user.target
+
+    (One inconvenience is that the version number needs updating whenever jar file version changes.)
+
+    Enable, then start the new service:
+
+        sudo systemctl enable sonarqube.service
+        sudo systemctl start sonarqube.service
+
+1. Browse to the URL set in sonar.properties.
+
+Check the files in ```/opt/sonarqube/logs``` if any troubles.
 
