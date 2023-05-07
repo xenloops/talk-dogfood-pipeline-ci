@@ -113,3 +113,5 @@ Instructions: https://docs.sonarqube.org/latest/setup/install-server
 
 Check the files in ```/opt/sonarqube/logs``` if any troubles.
 
+
+[Next slide](sonarqube_demo.md)
