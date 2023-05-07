@@ -23,7 +23,7 @@ OWASP-MSP talk by DC's project lead Jeremy Long: https://www.youtube.com/watch?v
 <br />
 <br />
 
-## Install 
+## Install Dependency-Check
 
 Jenkins integration: https://plugins.jenkins.io/dependency-check-jenkins-plugin
 
@@ -31,7 +31,7 @@ Jenkins integration: https://plugins.jenkins.io/dependency-check-jenkins-plugin
 2. Search for “OWASP Dependency-Check” 
 3. Check
 4. Install without Restart.
-5. Manage Jenkins > ToolsS
+5. Manage Jenkins > Tools
 6. Scroll down to Dependency-Check section
 7. Click Add Dependency-Check button
 8. Give it a name (e.g. “SCA: Dependency-Check”)
