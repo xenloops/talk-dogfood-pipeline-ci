@@ -48,7 +48,7 @@ pipeline {
 Some things to keep in mind:
 * Commands need to be delivered differently in Jenkinsfile than the command line
 * You may need to perform some searching and trial-and-error to get them right
-* Any service account keys or passwords should be imported
+* Any service account keys or passwords should not appear in configs
 
 <br /><br /><br /><br />
 [Next slide](pipe_as_code_2.md)
