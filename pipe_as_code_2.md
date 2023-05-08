@@ -86,4 +86,4 @@ stage('SAST') {
 
 Example actual [Jenkinsfile](https://github.com/xenloops/password-vault/blob/master/Jenkinsfile)
 
-[Next slide](pipe_as_code_2.md)
+[Next slide](lessons_outcomes.md)
