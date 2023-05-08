@@ -4,15 +4,34 @@
 
 ## Build stage
 
+* Essential for many SAST scanners for Java
+* Good idea to make sure the code even compiles
+* Command depends on method and operating system (e.g. Maven, Gradle, ADO)
+
         stage('Build') {
             steps {
+                // Good to output something to the log:
                 echo '*** Building the project...'
                 sh 'ant compile jar'
             }
         }
 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 ## SCA stage
+
+* Command depends on SCA software used
+* DC takes a number of parameters:
+        * -o
+        * -s: source file location
+        * -f: report file types {PDF|...|...|ALL}
+ * Specify name of the odcInstallation in Jenkins
+ * Specify output file pattern
 
         stage ('SCA') {
             steps {
@@ -26,6 +45,12 @@
             }
         }
 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 ## SAST stage
 
