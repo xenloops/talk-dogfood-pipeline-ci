@@ -21,9 +21,10 @@ Nathan Larson has led static analysis teams at two major financial institutions,
 1. Optimizing the CI pipeline
 
 ## Key takeaways
-* Development teams have many priorities; we don’t want to waste their time.
-* Make your security recommendations worth the effort.
-* Add the value of direct experience to your recommendations.
+* Development teams have many priorities; we don’t want to waste their time
+* Meet dev teams where they work
+* Make your security recommendations worth the effort
+* Add the value of direct experience to your recommendations
 
 ## Ground rules
 * **Interrupt with questions!**
