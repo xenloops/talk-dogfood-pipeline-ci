@@ -28,9 +28,11 @@ Let's build a basic CI pipeline, that:
 
 * Command depends on SCA software used
 * DC takes a number of parameters:
-        * -o
-        * -s: source file location
-        * -f: report file types {PDF|...|...|ALL}
+   * -s: scan path (can be multiple)
+   * --exclude: path _not_ to scan
+   * -o: output file location (defaults to job directory)
+   * -f: report file types {CSV|JSON|XML|HTML|JUNIT|SARIF|PDF|ALL}
+   * List of all options at https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html
  * Specify name of the odcInstallation in Jenkins
  * Specify output file pattern
 
@@ -38,8 +40,7 @@ Let's build a basic CI pipeline, that:
             steps {
                 echo '*** Checking dependencies...'
                 dependencyCheck additionalArguments: ''' 
-                    -o "./" 
-                    -s "./"
+                    -s "./src"
                     -f "ALL" 
                     --prettyPrint''', odcInstallation: 'SCA: Dependency-Check'
                 dependencyCheckPublisher pattern: 'dependency-check-report.xml'
