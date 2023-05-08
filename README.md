@@ -25,13 +25,22 @@ Nathan Larson has led static analysis teams at two major financial institutions,
 1. SAST tool scanning setup & demo
 1. Optimizing the CI pipeline
 
-**Please interrupt with questions!**
-
-
 ## Key takeaways
-* Development teams have many priorities; we don’t want waste their time.
-* Make your appsec recommendations worth the effort.
+* Development teams have many priorities; we don’t want to waste their time.
+* Make your security recommendations worth the effort.
 * Add the value of direct experience to your recommendations.
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+## Ground rules
+* **Interrupt with questions!**
+* There are no silver bullets
+
 
 [Next slide](start_here.md)
 
