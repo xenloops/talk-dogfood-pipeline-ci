@@ -1,4 +1,4 @@
-# An AppSec cat attempts <p> to eat the AppSec dog food <p> CI edition
+# An AppSec cat attempts to eat the AppSec dog food: CI edition
 
 ## Abstract
 
