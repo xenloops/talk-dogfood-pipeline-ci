@@ -5,10 +5,7 @@
 * When a dependency has a known, published vulnerability, our application inherits that vulnerability. 
 * Therefore, we assume the risk of those dependencies.
 
-<br />
-<br />
-<br />
-<br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 # OWASP Dependency-Check
 
@@ -18,10 +15,7 @@ Base project and downloads: https://github.com/jeremylong/DependencyCheck
 
 OWASP-MSP talk by DC's project lead Jeremy Long: https://www.youtube.com/watch?v=BUiWcDj1Ikw
 
-<br />
-<br />
-<br />
-<br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 ## Install Dependency-Check
 
