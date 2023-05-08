@@ -8,8 +8,8 @@ Again, fork someone else's repo if you need to modify it.
 1. (Do basic Jenkins job setup)
 2. If Java, add a build step first; SonarQube scans class files rather than source code
 4. Add Build Step: Execute SonarQube Scanner: Analysis properties:
-    1. sonar.ProjectKey=[project name with no spaces]
-    1. sonar.language=[Main language used]
+    1. sonar.ProjectKey=_[project name with no spaces]_
+    1. sonar.language=_[Main language used]_
     1. (Leave everything else as is)
 1. Click Save
 
