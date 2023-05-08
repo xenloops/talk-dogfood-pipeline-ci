@@ -35,26 +35,25 @@ Instructions: https://docs.sonarqube.org/latest/setup/install-server
     GRANT ALL ON SCHEMA sonarqubeSchema TO sonarqube;
     alter user sonarqube with createdb;
     ```
-    
 8. See list of DB users and their roles:
     ```\du;```
 9. Exit Postgres command prompt:
     ```quit```
 
-#### SonarQube
+#### Install SonarQube
 
 1. Download SonarQube Community Edition (I opted for the LTS version).
 2. Create a new user and group:
-    ```
-    sudo groupadd sonarqube
-    sudo useradd -s /bin/bash -m -c "sonarqube" -gsonarqube sonarqube
-    ```
+
+        sudo groupadd sonarqube
+        sudo useradd -s /bin/bash -m -c "sonarqube" -gsonarqube sonarqube
+
 3. Unzip into desired directory and give recursive ownership to the new sonarqube user:
-    ```
-    sudo unzip sonarqube-9.9.0.65466.zip -d /opt
-    sudo mv /opt/sonarqube-9.9.0.65466  /opt/sonarqube
-    sudo chown -R sonarqube:sonarqube /opt/sonarqube-9.9.0.65466
-    ```
+
+        sudo unzip sonarqube-9.9.0.65466.zip -d /opt
+        sudo mv /opt/sonarqube-9.9.0.65466  /opt/sonarqube
+        sudo chown -R sonarqube:sonarqube /opt/sonarqube-9.9.0.65466
+
 4. Sonar makes some assumptions of people using the Community Edition. Like that you want to muck about in config files and change your user’s settings. (Well, it is free.) Change the following settings (per https://docs.sonarqube.org/latest/requirements/requirements -- make sure you’re looking at the appropriate version!)
     Add to /etc/sysctl.conf:
     
@@ -113,5 +112,33 @@ Instructions: https://docs.sonarqube.org/latest/setup/install-server
 
 Check the files in ```/opt/sonarqube/logs``` if any troubles.
 
+#### Integrate SonarQube with Jenkins
+
+https://docs.sonarqube.org/9.9/analyzing-source-code/ci-integration/jenkins-integration (change URL for version you're using)
+
+1. In Jenkins: Manage Jenkins > Plugins > Available Plugins
+2. Search for “SonarQube Scanner” 
+3. Check
+4. Install and restart: ```http://localhost:8080/restart```
+5. After restarting Jenkins, follow the instructions at:
+    * https://docs.sonarqube.org/9.9/analyzing-source-code/scanners/jenkins-extension-sonarqube
+    * https://docs.sonarqube.org/9.9/analyzing-source-code/ci-integration/jenkins-integration
+7. Manage Jenkins > System > Manage Credentials > System store > Global credentials (unrestricted)
+8. Add credentials:
+    1. Kind: Secret Text
+    1. Scope: Global
+    2. To get the Secret, copy and paste the token here from SonarQube: User > My Account > Security > Generate a token (Name: Jenkins; Type: Global Analysis Token; No expiration).
+9. Back in Jenkins: Manage Jenkins > System > SonarQube servers: 
+    1. Add SonarQube
+    1. Name: SonarQube server
+    2. Server URL: http://localhost:9000
+    3. Server authentication token: Secret text
+    4. Click Save.
+10. Dashboard > Manage Jenkins > Tools > SonarQube Scanner installations: 
+    1. Add SonarQube Scanner
+    2. Name: SonarQube Scanner 
+    3. **Uncheck** Install automatically
+    4. Set ```SONAR_RUNNER_HOME: /opt/sonarqube/bin/linux-x86-64```
+    5. Click Save.
 
 [Next slide](sonarqube_demo.md)
