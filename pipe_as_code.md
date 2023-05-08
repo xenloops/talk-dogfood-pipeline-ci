@@ -5,12 +5,7 @@ So far we've seen a cobbling together of a couple of security tools getting run 
 * Difficult to understand without screenshots
 * What happens when disaster strikes, taking your Jenkins install out?
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 # A better way
 
@@ -21,12 +16,7 @@ What if we could build this pipeline as a single file?
 * Easy to backup and restore
 * Maintain in project repository as a code file
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 ## The basic Jenkinsfile
 ```
@@ -53,12 +43,7 @@ pipeline {
     }
 }
 ```
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 Some things to keep in mind:
 * Commands need to be delivered differently in Jenkinsfile than the command line
