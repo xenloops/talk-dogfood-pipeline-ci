@@ -82,8 +82,8 @@ stage('SAST') {
  }
 ```
 
-<br /><br /><br /><br />
-
 Example actual [Jenkinsfile](https://github.com/xenloops/password-vault/blob/master/Jenkinsfile)
+
+<br /><br /><br /><br />
 
 [Next slide](lessons_outcomes.md)
