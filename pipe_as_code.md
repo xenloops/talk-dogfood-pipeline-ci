@@ -61,7 +61,8 @@ pipeline {
 <br />
 
 Some things to keep in mind:
-* Commands need to be handled differently in Jenkinsfile
+* Commands need to be delivered differently in Jenkinsfile than the command line
+* You may need to perform some searching and trial-and-error to get them right
 * Any service account keys or passwords should be imported
 
 Example actual [Jenkinsfile](https://github.com/xenloops/password-vault/blob/master/Jenkinsfile)
