@@ -52,32 +52,35 @@ Let's build a basic CI pipeline, that:
 ## SAST stage
 
 * Command depends on SCA software used
-* SQ expects a number of configuration settings that need to appear as parameters:
+* SQ expects a number of configuration settings that need to appear as parameters with ```-D```:
     * ```sonar.projectKey``` key for SonarQube to track the project (no spaces)
     * ```sonar.sources``` path to source files
     * ```sonar.language``` main language used
+    * List of all options at https://docs.sonarqube.org/latest/analyzing-source-code/analysis-parameters (check for the version you're using)
 
-        stage('SAST') {
-            environment {
-                SCANNER_HOME = tool 'SonarQube Scanner'
-                PROJECT_KEY = 'password-vault'
-            }
-            steps {
-                echo '*** Scanning the code...'
-                withSonarQubeEnv('SonarQube server') {
-                    sh '''$SCANNER_HOME/bin/sonar-scanner \
-                    -Dsonar.projectKey=$PROJECT_KEY \
-                    -Dsonar.projectName='Project analyzed by SonarQube' \
-                    -Dsonar.projectVersion=1.0 \
-                    -Dsonar.sources=src \
-                    -Dsonar.language=java \
-                    -Dsonar.sourceEncoding=UTF-8 \
-                    -Dsonar.java.binaries=build/classes/passvault \
-                    -Dsonar.java.libraries=dist/lib
-                    '''
-                }
-            }
-         }
+```
+stage('SAST') {
+    environment {
+        SCANNER_HOME = tool 'SonarQube Scanner'
+        PROJECT_KEY = 'password-vault'
+    }
+    steps {
+        echo '*** Scanning the code...'
+        withSonarQubeEnv('SonarQube server') {
+            sh '''$SCANNER_HOME/bin/sonar-scanner \
+            -Dsonar.projectKey=$PROJECT_KEY \
+            -Dsonar.projectName='Project analyzed by SonarQube' \
+            -Dsonar.projectVersion=1.0 \
+            -Dsonar.sources=src \
+            -Dsonar.language=java \
+            -Dsonar.sourceEncoding=UTF-8 \
+            -Dsonar.java.binaries=build/classes/passvault \
+            -Dsonar.java.libraries=dist/lib
+            '''
+        }
+    }
+ }
+```
 
 <br /><br /><br /><br />
 
