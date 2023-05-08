@@ -9,7 +9,7 @@
 
 # OWASP Dependency-Check
 
-SCA tool that attempts to detect publicly disclosed vulnerabilities among a project's dependencies by determining if that dependency has any Common Vulnerability Enumerations (CVE) associated with it. If found, DC generates a report linking to the associated CVE entries.
+SCA tool that attempts to detect publicly disclosed vulnerabilities among a project's dependencies by determining if that dependency has any known vulnerabilities associated with it. If found, DC generates a report linking to the associated CVE entries.
 
 Base project and downloads: https://github.com/jeremylong/DependencyCheck 
 
