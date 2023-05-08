@@ -22,6 +22,8 @@
 1. Install helper packages
     * git: ```sudo apt install git -y```
 
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
 # Jenkins maintenance
 
 Some commands that will be essential for working with Jenkins in the long term.
