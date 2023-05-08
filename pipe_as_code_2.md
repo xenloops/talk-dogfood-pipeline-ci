@@ -51,6 +51,12 @@ Let's build a basic CI pipeline, that:
 
 ## SAST stage
 
+* Command depends on SCA software used
+* SQ expects a number of configuration settings that need to appear as parameters:
+    * ```sonar.projectKey``` key for SonarQube to track the project (no spaces)
+    * ```sonar.sources``` path to source files
+    * ```sonar.language``` main language used
+
         stage('SAST') {
             environment {
                 SCANNER_HOME = tool 'SonarQube Scanner'
@@ -58,7 +64,6 @@ Let's build a basic CI pipeline, that:
             }
             steps {
                 echo '*** Scanning the code...'
-                // test command here
                 withSonarQubeEnv('SonarQube server') {
                     sh '''$SCANNER_HOME/bin/sonar-scanner \
                     -Dsonar.projectKey=$PROJECT_KEY \
