@@ -65,6 +65,4 @@ Some things to keep in mind:
 * You may need to perform some searching and trial-and-error to get them right
 * Any service account keys or passwords should be imported
 
-Example actual [Jenkinsfile](https://github.com/xenloops/password-vault/blob/master/Jenkinsfile)
-
 [Next slide](pipe_as_code_2.md)
