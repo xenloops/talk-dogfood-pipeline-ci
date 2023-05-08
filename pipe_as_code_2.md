@@ -1,6 +1,12 @@
 # Putting it all together
 
+Let's build a basic CI pipeline, that:
+1. Copies a repository
+2. Builds the code
+3. Scans for vulnerable dependencies
+4. Scans for vulnerable code
 
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 ## Build stage
 
@@ -16,12 +22,7 @@
             }
         }
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 ## SCA stage
 
@@ -45,12 +46,7 @@
             }
         }
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 ## SAST stage
 
@@ -77,9 +73,7 @@
             }
          }
 
-
-## 
-
+<br /><br /><br /><br />
 
 Example actual [Jenkinsfile](https://github.com/xenloops/password-vault/blob/master/Jenkinsfile)
 
