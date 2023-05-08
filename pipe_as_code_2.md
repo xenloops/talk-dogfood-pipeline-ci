@@ -28,7 +28,7 @@ Let's build a basic CI pipeline, that:
 
 * Command depends on SCA software used
 * DC takes a number of parameters:
-   * ```-s``` scan path (can be multiple)
+   * ```-s``` path to scan (can be multiple)
    * ```--exclude``` path _not_ to scan
    * ```-o``` output file location (defaults to job directory)
    * ```-f``` report file types {CSV|JSON|XML|HTML|JUNIT|SARIF|PDF|ALL}
