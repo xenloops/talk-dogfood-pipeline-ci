@@ -25,6 +25,8 @@ Nathan Larson has led static analysis teams at two major financial institutions,
 * Meet devs where they work, and shift left in the process
 * Add the value of direct experience to your recommendations
 
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
 ## Ground rules
 * **Interrupt with questions!**
 * There are no silver bullets
