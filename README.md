@@ -30,6 +30,7 @@ Nathan Larson has led static analysis teams at two major financial institutions,
 * **Interrupt with questions!**
 * There are no silver bullets
 
+<br /><br /><br /><br />
 
 [Next slide](start_here.md)
 
