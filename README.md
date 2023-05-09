@@ -22,8 +22,7 @@ Nathan Larson has led static analysis teams at two major financial institutions,
 
 ## Key takeaways
 * Development teams have many priorities; we don’t want to waste their time
-* Meet dev teams where they work
-* Make your security recommendations worth the effort
+* Meet devs where they work, and shift left in the process
 * Add the value of direct experience to your recommendations
 
 ## Ground rules
