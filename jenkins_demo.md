@@ -1,4 +1,4 @@
-# Jenkins demos
+# Jenkins demo
 
 1. Click Create a Job
 2. Name the job (e.g. the repo's name)
@@ -8,9 +8,7 @@
 6. Source Code Management section: Git > Repository URL
 7. Branch Specifier: [blank]
 
-
-## List files and backup directory
-
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 ## Build HelloWorld code
 
@@ -28,5 +26,7 @@ In Configure screen:
 6. Click Save
 7. In Project page, click Build Now.
 8. After about 1/4 second, the #1 build will complete. Check the Jenkins working directory for the new project and confirm that the repo is there, as well as a new ```Main.class``` file.
+
+<br /><br /><br /><br />
 
 [Next slide](sca.md)
