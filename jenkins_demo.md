@@ -18,6 +18,12 @@ In Configure screen:
 9. Hover over job that just ran to see Success message
 10. Click job # > Console Output to see details
 
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+* That demonstrates the most basic of Jenkins functionality. 
+* But nothing very interesting!
+* Now let's do something useful.
+
 <br /><br /><br /><br />
 
 [Next slide](sca.md)
