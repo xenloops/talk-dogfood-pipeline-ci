@@ -22,9 +22,10 @@ In Configure screen:
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-* That demonstrates the most basic of Jenkins functionality. 
+* That demonstrates the most basic of Jenkins functionality
 * But nothing very interesting!
-* Now let's do something useful.
+* Jenkins can automate anything you can do with a computer
+* Now let's do something useful
 
 <br /><br /><br /><br />
 
