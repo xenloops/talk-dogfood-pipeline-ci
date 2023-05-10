@@ -1,6 +1,7 @@
 # Why are we doing this?
 
 * Proof-of-concept for pipeline tools
+* "Security is everyone's job"
 * All the tools are free
 * But... make sure the licensing is appropriate to your use case 
   * e.g. "community" editions of commercial software
