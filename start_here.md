@@ -31,6 +31,8 @@ I made some choices for working on this demo:
 * **Open-source software** -- to show what's possible at zero cost and maximum transparency
 * **Up-to-date** -- Use the latest LTS version of software to get out of frequent feature update headaches
 
+<br />
+
 **But we should never be too tied to our weapons of choice.**
 
 <br /><br /><br /><br />
