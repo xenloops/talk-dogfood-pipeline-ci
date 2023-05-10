@@ -14,6 +14,10 @@ He works as an AppSec architect at a consulting shop called Concord in the Twin 
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
+**Disclaimer:** This talk does not necessarily represent the policies or processes of past, present, or future employers. I am not speaking on behalf of any company during this presentation. I use product names as examples, and do not intend them as endorsements -- except those of OWASP projects, which are awesome and should be checked out by everyone in technology.
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
 ## Agenda
 
 1. System setup
