@@ -1,4 +1,6 @@
-# Jenkins demo: Build HelloWorld code
+# Trivial Jenkins demo: Build HelloWorld code
+
+Let's see how easy this is.
 
 In Jenkins:
 1. New Item
