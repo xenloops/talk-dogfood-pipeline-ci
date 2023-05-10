@@ -8,10 +8,10 @@ SAST analyzes the source code or binaries for common programming errors, coding 
 
 SAST tool that scans for code smells, complexity, and vulnerabilties. It has both Community Edition (free/open-source) and commercial versions. 
 
-Base site: https://www.sonarsource.com/products/sonarqube/
-Documentation: https://docs.sonarqube.org/latest/
-Downloads: https://www.sonarsource.com/products/sonarqube/downloads/
-Installation: https://docs.sonarqube.org/latest/setup/install-server
+* Base site: https://www.sonarsource.com/products/sonarqube/
+* Documentation: https://docs.sonarqube.org/latest/
+* Downloads: https://www.sonarsource.com/products/sonarqube/downloads/
+* Installation: https://docs.sonarqube.org/latest/setup/install-server (adjust for your version)
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
@@ -111,7 +111,7 @@ Installation: https://docs.sonarqube.org/latest/setup/install-server
         sudo systemctl enable sonarqube.service
         sudo systemctl start sonarqube.service
 
-1. Browse to the URL set in sonar.properties.
+1. Browse to the URL set in sonar.properties (e.g. http://127.0.0.1:9000 or http://localhost:9000)
 
 Check the files in ```/opt/sonarqube/logs``` if any troubles.
 
