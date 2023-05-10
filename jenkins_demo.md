@@ -1,16 +1,4 @@
-# Jenkins demo
-
-1. Click Create a Job
-2. Name the job (e.g. the repo's name)
-3. Freestyle Project
-4. Click OK
-5. General section: GitHub Project URL
-6. Source Code Management section: Git > Repository URL
-7. Branch Specifier: [blank]
-
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-## Build HelloWorld code
+# Jenkins demo: Build HelloWorld code
 
 In Jenkins:
 1. New Item
