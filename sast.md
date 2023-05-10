@@ -2,6 +2,8 @@
 
 SAST analyzes the source code or binaries for common programming errors, coding standards violations, and known security weaknesses, and generates a report of potential vulnerabilities. SAST can be used early and throughout the SDLC to identify security issues before the application is deployed, and can help developers to improve code quality and reduce the likelihood of security breaches.
 
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
 ## SonarQube
 
 SAST tool that scans for code smells, complexity, and vulnerabilties. It has both Community Edition (free/open-source) and commercial versions. 
@@ -9,12 +11,11 @@ SAST tool that scans for code smells, complexity, and vulnerabilties. It has bot
 Base site: https://www.sonarsource.com/products/sonarqube/
 Documentation: https://docs.sonarqube.org/latest/
 Downloads: https://www.sonarsource.com/products/sonarqube/downloads/
+Installation: https://docs.sonarqube.org/latest/setup/install-server
 
-### Install
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-Instructions: https://docs.sonarqube.org/latest/setup/install-server
-
-#### Database prerequisite
+### Install the database prerequisite
 
 1. Install PostgreSQL from the system (SQ also supports MSSQL and Oracle):
     ```sudo apt install postgresql -y```
@@ -40,9 +41,11 @@ Instructions: https://docs.sonarqube.org/latest/setup/install-server
 9. Exit Postgres command prompt:
     ```quit```
 
-#### Install SonarQube
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-1. Download SonarQube Community Edition (I opted for the LTS version).
+### Install SonarQube
+
+1. Download SonarQube Community Edition (I opted for the latest LTS version).
 2. Create a new user and group:
 
         sudo groupadd sonarqube
@@ -54,7 +57,7 @@ Instructions: https://docs.sonarqube.org/latest/setup/install-server
         sudo mv /opt/sonarqube-9.9.0.65466  /opt/sonarqube
         sudo chown -R sonarqube:sonarqube /opt/sonarqube-9.9.0.65466
 
-4. Sonar makes some assumptions of people using the Community Edition. Like that you want to muck about in config files and change your user’s settings. (Well, it is free.) Change the following settings (per https://docs.sonarqube.org/latest/requirements/requirements -- make sure you’re looking at the appropriate version!)
+4. Change the following settings (per https://docs.sonarqube.org/latest/requirements/requirements -- make sure you’re looking at the appropriate version!)
     Add to /etc/sysctl.conf:
     
         vm.max_map_count=524288
@@ -112,13 +115,15 @@ Instructions: https://docs.sonarqube.org/latest/setup/install-server
 
 Check the files in ```/opt/sonarqube/logs``` if any troubles.
 
-#### Integrate SonarQube with Jenkins
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+### Integrate SonarQube with Jenkins
 
 https://docs.sonarqube.org/9.9/analyzing-source-code/ci-integration/jenkins-integration (change URL for version you're using)
 
 1. In Jenkins: Manage Jenkins > Plugins > Available Plugins
 2. Search for “SonarQube Scanner” 
-3. Check
+3. Check the selection box
 4. Install and restart: ```http://localhost:8080/restart```
 5. After restarting Jenkins, follow the instructions at:
     * https://docs.sonarqube.org/9.9/analyzing-source-code/scanners/jenkins-extension-sonarqube
@@ -140,5 +145,7 @@ https://docs.sonarqube.org/9.9/analyzing-source-code/ci-integration/jenkins-inte
     3. **Uncheck** Install automatically
     4. Set ```SONAR_RUNNER_HOME: /opt/sonarqube/bin/linux-x86-64```
     5. Click Save.
+
+<br /><br /><br /><br />
 
 [Next slide](sonarqube_demo.md)
