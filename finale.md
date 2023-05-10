@@ -9,7 +9,7 @@
 ## Reach out
 * About this talk or appsec: 
   * xenloops [at] protonmail [dot] com
-  * https://github.com/xenloops/talk-dogfood-pipeline-ci
+  * Complete talk at https://github.com/xenloops/talk-dogfood-pipeline-ci
 * About the local OWASP chapter: 
   * https://owasp.org/www-chapter-minneapolis-st-paul
   * nathan.larson [at] owasp [dot] org
