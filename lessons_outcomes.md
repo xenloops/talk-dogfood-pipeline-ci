@@ -2,6 +2,7 @@
 
 * Installing and updating Jenkins is easy
 * Installing and integrating other tools less so
+* Rolling your own pipeline means you own it, and maintain it
 * If running tools rarely, expect delays for updates
   * Automating project to run regularly alleviates this a bit
 * Error messages in Jenkins Console Output might be useless
