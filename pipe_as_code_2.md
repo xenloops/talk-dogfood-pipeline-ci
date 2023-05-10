@@ -1,7 +1,7 @@
 # Putting it all together
 
 Let's build a basic CI pipeline, that:
-1. Copies a repository
+1. Pulls a repository down
 2. Builds the code
 3. Scans for vulnerable dependencies
 4. Scans for vulnerable code
@@ -10,7 +10,7 @@ Let's build a basic CI pipeline, that:
 
 ## Build stage
 
-* Essential for many SAST scanners for Java
+* Essential for many SAST scanners for some languages like Java
 * Good idea to make sure the code even compiles
 * Command depends on method and operating system (e.g. Maven, Gradle, ADO)
 
