@@ -29,7 +29,7 @@
 
 # Maintaining Jenkins
 
-Some commands that will be essential for working with Jenkins in the long term.
+Some commands essential for working with Jenkins:
 
 * Start: ```sudo systemctl start Jenkins```
 * Safe restart (new jobs queue up and run after the restart): ```http://localhost:8080/safeRestart```
