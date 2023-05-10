@@ -15,6 +15,6 @@
   * nathan.larson [at] owasp [dot] org
   * Meetings are free and open!
   * Interested in giving a talk?
-  * Want to help out?
+  * Want to help the local security community?
 
 <br /><br /><br />
