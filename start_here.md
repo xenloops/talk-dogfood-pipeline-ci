@@ -1,16 +1,20 @@
-# Why this setup?
+# Why are we doing this?
 
 * Proof-of-concept for pipeline tools
 * All the tools are free
-* But... make sure the licensing is appropriate to your use case (e.g. "community" editions of commercial software)
+* But... make sure the licensing is appropriate to your use case 
+  * e.g. "community" editions of commercial software
+* Geek cred?
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 # Preliminaries
 
-* VirtualBox
-* A virtual machine running Linux (I'm using Lubuntu, but any flavor should work), with minimum requirements:
-  * 4GB RAM
+How I did it:
+
+* VirtualBox (though any virtualization solution is fine)
+* A minimalist virtual machine running Linux (I'm using Lubuntu, but any flavor should work):
+  * 4 GB RAM
   * 1 CPU
   * 64 MB video RAM
   * 40 GB virtual storage
