@@ -34,5 +34,6 @@ Some commands that will be essential for working with Jenkins in the long term.
 * Stop (without waiting for jobs): ```sudo systemctl stop jenkins```
 * To see or edit settings: ```systemctl cat jenkins```
 
+<br /><br /><br /><br />
 
 [Next slide](jenkins_demo.md)
