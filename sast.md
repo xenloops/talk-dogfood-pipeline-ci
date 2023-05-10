@@ -1,6 +1,16 @@
 # Static Application Security Testing / Static Code Analysis
 
-SAST analyzes the source code or binaries for common programming errors, coding standards violations, and known security weaknesses, and generates a report of potential vulnerabilities. SAST can be used early and throughout the SDLC to identify security issues before the application is deployed, and can help developers to improve code quality and reduce the likelihood of security breaches.
+SAST analyzes the source code or binaries for:
+
+* Common programming errors
+* Coding standards violations
+* Known security weaknesses
+
+SAST can be used early and throughout the SDLC to:
+
+* Identify defects in code before the application is deployed
+* Help developers learn and improve the quality of their code
+* Reduce the likelihood of security breaches
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
