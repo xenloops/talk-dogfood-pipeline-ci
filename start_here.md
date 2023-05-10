@@ -1,3 +1,11 @@
+# Why this setup?
+
+* Proof-of-concept for pipeline tools
+* All the tools are free
+* But... make sure the licensing is appropriate to your use case (e.g. "community" editions of commercial software)
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
 # Preliminaries
 
 * VirtualBox
