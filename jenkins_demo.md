@@ -5,6 +5,7 @@ In Jenkins:
 2. Name: Hello World
 3. Freestyle project
 4. Click OK
+
 In Configure screen:
 1. General: Check GitHub project
 2. Project url (e.g. https://github.com/xenloops/jenkins-nude)
