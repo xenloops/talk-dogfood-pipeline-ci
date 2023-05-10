@@ -24,7 +24,7 @@ He works as an AppSec architect at a consulting shop called Concord in the Twin 
 1. Jenkins setup & demo
 1. SCA tool scanning setup & demo
 1. SAST tool scanning setup & demo
-1. Optimizing the CI pipeline
+1. The CI pipeline as code
 
 ## Key takeaways
 * Development teams have many priorities; we don’t want to waste their time
