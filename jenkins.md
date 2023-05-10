@@ -24,7 +24,7 @@
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-# Jenkins maintenance
+# Maintaining Jenkins
 
 Some commands that will be essential for working with Jenkins in the long term.
 
