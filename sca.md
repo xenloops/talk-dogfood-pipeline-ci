@@ -35,7 +35,8 @@ Jenkins integration: https://plugins.jenkins.io/dependency-check-jenkins-plugin
 
 Restart Jenkins: ```http://localhost:8080/restart```
 
-The first time you run it, it will take a while to download historical NVD data – goes back to 2002!
+The first time you run it, it will take a while to download historical NVD data, which goes back to 2002!
 
+<br /><br /><br /><br />
 
 [Next slide](dep-check_demo.md)
