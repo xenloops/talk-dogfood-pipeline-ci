@@ -1,9 +1,12 @@
 # Installing Jenkins
 * Default Jenkins URL: http://localhost:8080
+* Jenkins installation on Ubuntu Linux: Installation: https://www.jenkins.io/doc/book/installing/linux/#debianubuntu 
 * Default Jenkins root dir: ```/var/lib/jenkins/```
 * Default Jenkins working dir: ```/var/lib/jenkins/workspace/``` (bookmark this in file manager)
 
+<br />
 
+1. Download and install Java/OpenJDK 11 or 17 (I installed the v17 LTS release for better stability).
 1. Download and import the Jenkins repository GPG keys (also see [this page](https://www.jenkins.io/blog/2023/03/27/repository-signing-keys-changing)):
     ```
     curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
