@@ -19,4 +19,6 @@ Results: Project page > SonarQube link
 
 To watch progress: click build > Console Output
 
+<br /><br /><br /><br />
+
 [Next slide](pipe_as_code.md)
