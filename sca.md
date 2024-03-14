@@ -37,6 +37,8 @@ Restart Jenkins: ```http://localhost:8080/restart```
 
 The first time you run it, it will take a while to download historical NVD data, which goes back to 2002!
 
+2024 update: Beginning with version 9.x of Dependency-Check, you have the option of using an API key that you an request from NIST. After some trial and error, I recommend you don't; updating without a key may take longer, but using a key means you'll probably need to increase the timeout (which the slower non-key download already includes).
+
 <br /><br /><br /><br />
 
 [Next slide](dep-check_demo.md)
